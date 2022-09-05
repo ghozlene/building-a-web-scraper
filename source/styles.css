@@ -1,0 +1,79 @@
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #444444;
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.6;
+}
+
+body {
+	margin: 1rem 0;
+}
+
+.container {
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@media screen and (min-width: 800px) {
+	.flex-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+.card {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 50%;
+	flex: 1 1 50%;
+	border: 1px solid #efefef;
+	margin: 15px 0;
+	-webkit-box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+}
+.card:hover {
+	-webkit-box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card .subtitle {
+	margin: 0 0 15px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #e76c67;
+}
+.card .subtitle h3 {
+	margin: 0;
+	font-size: 1.75rem;
+	line-height: 1.2;
+}
+.card .card-content {
+	padding: 30px 30px 110px;
+}
+
+.card .options a {
+	color: #666666;
+}
+.card .options a:hover {
+	color: #07f787;
+}
+.card .options .fa {
+	margin-right: 0.25rem;
+}
+
+@media screen and (min-width: 800px) {
+	.card {
+		margin: 0.5rem;
+	}
+}

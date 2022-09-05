@@ -7,11 +7,12 @@ const getAllData = async () => {
 
 		data.forEach((element) => {
 			const title =
-				`<div><h3>` +
+				`<div class="subtitle"><h3>` +
 				element.title +
-				`</h3><a href='${element.url}'>` +
+				`</h3></div><div class="options"><a href='${element.url}'>` +
 				element.url +
 				`</a></div>`;
+
 			displaying.insertAdjacentHTML('beforeend', title);
 		});
 		{
