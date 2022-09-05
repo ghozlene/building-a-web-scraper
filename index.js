@@ -31,4 +31,4 @@ const fetch = async () => {
 	}
 };
 fetch();
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on ${PORT}`.yellow));
